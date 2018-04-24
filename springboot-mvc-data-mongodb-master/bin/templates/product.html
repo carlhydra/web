@@ -4,7 +4,7 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorator="default">
     <head>
-        <title>Product List</title>
+        <title>User List</title>
     </head>
     <body>
         <div layout:fragment="content" class="row">
@@ -17,16 +17,16 @@
                     <table class="table" id="product-table">
                         <thead>
                             <tr>
-                                <th>Product Name</th>
-                                <th>Product Desc</th>
-                                <th>Product Price</th>
+                                <th>Last Name</th>
+                                <th>Desc</th>
+                                <th>Email</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr th:each="product : ${products}">
-                                <td><a th:text="${product.prodName}" th:href="@{'/show/' + ${product.id}}"></a></td>
+                                <td><a th:text="${product.lastName}" th:href="@{'/show/' + ${product.id}}"></a></td>
                                 <td th:text="${product.prodDesc}"></td>
-                                <td th:text="${product.prodPrice}"></td>
+                                <td th:text="${product.email}"></td>
                             </tr>
                         </tbody>
                     </table>
