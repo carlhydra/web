@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="default">
+    <head>
+        <title>Create User</title>
+    </head>
+    <body>
+        <div layout:fragment="content" class="row">
+            <div class="col-xs-8 col-md-8">
+                <h3>
+                    <a href="/product" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list"></span> User</a>
+                </h3>
+                <h2>Create User</h2>
+                <form action="/save">
+                  <div class="form-group">
+                        <label for="email">User Name:</label>
+                        <input type="text" class="form-control" name="userName" />
+                    </div>
+                      <div class="form-group">
+                        <label for="email">Password:</label>
+                        <input type="password" class="form-control" name="password" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" name="email" />
+                    </div>
+                 <div class="form-group">
+                        <label for="email">First Name:</label>
+                        <input type="text" class="form-control" name="firstName" />
+                    </div>
+                     <div class="form-group">
+                        <label for="email">Middle Name:</label>
+                        <input type="text" class="form-control" name="middleName" />
+                    </div>
+                     <div class="form-group">
+                        <label for="email">Last Name:</label>
+                        <input type="text" class="form-control" name="lastName" />
+                    </div>
+                     <div class="form-group">
+                        <label for="email">Address1:</label>
+                        <input type="text" class="form-control" name="address1" />
+                    </div>
+                     <div class="form-group">
+                        <label for="email">Address2:</label>
+                        <input type="text" class="form-control" name="address2" />
+                    </div>
+                     <div class="form-group">
+                        <label for="email">City:</label>
+                        <input type="text" class="form-control" name="city" />
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">State:</label>
+                        <input type="text" class="form-control" name="state" />
+                    </div>
+                      <div class="form-group">
+                        <label for="email">zip:</label>
+                        <input type="text" class="form-control" name="zip" />
+                    </div>
+                <div class="form-group">
+                        <label for="email">Description</label>
+                        <textarea class="form-control" name="prodDesc" cols="60" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Product Image URL:</label>
+                        <input type="url" class="form-control" name="prodImage" />
+                    </div>
+                    <button type="submit" class="btn btn-success">Save</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
