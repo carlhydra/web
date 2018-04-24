@@ -1,0 +1,4 @@
+com/springmvc/springmongodbweb/SpringMongodbWebApplication.class
+com/springmvc/springmongodbweb/models/Product.class
+com/springmvc/springmongodbweb/controllers/ProductController.class
+com/springmvc/springmongodbweb/repositories/ProductRepository.class
