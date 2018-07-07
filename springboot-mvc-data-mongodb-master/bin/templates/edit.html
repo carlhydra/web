@@ -4,27 +4,81 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorator="default">
     <head>
-        <title>Edit Product</title>
+        <title>Edit User</title>
     </head>
     <body>
         <div layout:fragment="content" class="row">
             <div class="col-xs-8 col-md-8">
                 <h3>
-                    <a href="/product" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list"></span> Product</a>
+                    <a href="/product" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-list"></span> Users</a>
                 </h3>
                 <h2>Edit Product</h2>
                 <form action="/update">
-                    <div class="form-group">
-                        <label for="email">Product Name:</label>
-                        <input type="text" class="form-control" name="prodName" th:value="${product.prodName}" />
+                   <!-- <div class="form-group">
+                        <label for="email">User Name:</label>
+                        <input type="text" class="form-control" name="userName" th:value="${product.userName}" />
                     </div>
                     <div class="form-group">
-                        <label for="email">Product Description</label>
+                        <label for="email" Description</label>
+                        <textarea class="form-control" name="prodDesc" cols="60" rows="3"> th:text="${product.prodDesc}"</textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="number" class="form-control" name="email" th:value="${product.email}" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Product Image URL:</label>
+                        <input type="url" class="form-control" name="prodImage" th:value="${product.prodImage}" />
+                    </div> -->
+                                   
+                     <div class="form-group">
+                        <label for="email">User Name:</label>
+                        <input type="text" class="form-control" name="userName" th:value="${product.userName}"/>
+                    </div>
+                      <div class="form-group">
+                        <label for="email">Password:</label>
+                        <input type="password" class="form-control" name="password" th:value="${product.password}"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" name="email" th:value="${product.email}"/>
+                    </div>
+                 <div class="form-group">
+                        <label for="email">First Name:</label>
+                        <input type="text" class="form-control" name="firstName" th:value="${product.firstName}"/>
+                    </div>
+                     <div class="form-group">
+                        <label for="email">Middle Name:</label>
+                        <input type="text" class="form-control" name="middleName" th:value="${product.middleName}"/>
+                    </div>
+                     <div class="form-group">
+                        <label for="email">Last Name:</label>
+                        <input type="text" class="form-control" name="lastName" th:value="${product.lastName}" />
+                    </div>
+                     <div class="form-group">
+                        <label for="email">Address1:</label>
+                        <input type="text" class="form-control" name="address1" th:value="${product.address1}" />
+                    </div>
+                     <div class="form-group">
+                        <label for="email">Address2:</label>
+                        <input type="text" class="form-control" name="address2" th:value="${product.address2}" />
+                    </div>
+                     <div class="form-group">
+                        <label for="email">City:</label>
+                        <input type="text" class="form-control" name="city" th:value="${product.city}"/>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">State:</label>
+                        <input type="text" class="form-control" name="state" th:value="${product.state}"/>
+                    </div>
+                      <div class="form-group">
+                        <label for="email">zip:</label>
+                        <input type="text" class="form-control" name="zip" th:value="${product.zip}"/>
+                    </div>
+                <div class="form-group">
+                        <label for="email">Description</label>
                         <textarea class="form-control" name="prodDesc" cols="60" rows="3" th:text="${product.prodDesc}"></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Product Price</label>
-                        <input type="number" class="form-control" name="prodPrice" th:value="${product.prodPrice}" />
                     </div>
                     <div class="form-group">
                         <label for="email">Product Image URL:</label>

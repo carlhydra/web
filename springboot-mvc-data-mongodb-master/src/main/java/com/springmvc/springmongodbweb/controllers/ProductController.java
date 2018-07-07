@@ -48,7 +48,7 @@ public class ProductController {
     		@RequestParam String zip,
     		@RequestParam String prodDesc, @RequestParam String prodImage) {
         Product product = new Product();
-
+        product.setUserName(userName);
         product.setProdDesc(prodDesc);
         product.setProdImage(prodImage);
         product.setFirstName(firstName);
@@ -88,12 +88,32 @@ public class ProductController {
     }
     
     @RequestMapping("/update")
-    public String update(@RequestParam String id, @RequestParam String prodName, @RequestParam String prodDesc, @RequestParam Double prodPrice, @RequestParam String prodImage) {
+    public String update(@RequestParam String id,String userName,@RequestParam String password,
+    		@RequestParam String email,
+    		@RequestParam String firstName, @RequestParam String lastName,
+    		@RequestParam String middleName, 
+    		@RequestParam String address1,
+    		@RequestParam String address2,
+    		@RequestParam String city,
+    		@RequestParam String state,
+    		@RequestParam String zip,
+    		@RequestParam String prodDesc, @RequestParam String prodImage) {
         Product product = productRepository.findOne(id);
       //  product.setProdName(prodName);
+      
+        product.setUserName(userName);
         product.setProdDesc(prodDesc);
-     //   product.setProdPrice(prodPrice);
         product.setProdImage(prodImage);
+        product.setFirstName(firstName);
+        product.setLastName(lastName);
+        product.setMiddleName(middleName);
+        product.setAddress1(address1);
+        product.setAddress2(address2);
+        product.setCity(city);
+        product.setState(state);
+        product.setZip(zip);
+        product.setEmail(email);
+        product.setPassword(password);
         productRepository.save(product);
 
         return "redirect:/show/" + product.getId();
