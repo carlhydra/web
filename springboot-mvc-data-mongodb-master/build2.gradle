@@ -30,7 +30,7 @@ dependencies {
 	providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
 	//compile('org.springframework.boot:spring-boot-starter-web')
         compile('org.webjars:bootstrap:3.3.7')
-      //  compile("org.springframework.boot:spring-boot-starter-security")
+      compile("org.springframework.boot:spring-boot-starter-security")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	
 }

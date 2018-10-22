@@ -1,8 +1,6 @@
-<!DOCTYPE HTML>
-<html lang="en"
-      xmlns:th="http://www.thymeleaf.org"
-      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorator="default">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" 
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{default}">
     <head>
         <title>User List</title>
     </head>
@@ -26,7 +24,7 @@
                             <tr th:each="product : ${products}">
                                 <td><a th:text="${product.lastName}" th:href="@{'/show/' + ${product.id}}"></a></td>
                                 <td th:text="${product.prodDesc}"></td>
-                                <td th:text="${product.email}"></td>
+                                <td><a th:text="${product.email}" th:href="@{'/show/' + ${product.id}}"></a></td>
                             </tr>
                         </tbody>
                     </table>

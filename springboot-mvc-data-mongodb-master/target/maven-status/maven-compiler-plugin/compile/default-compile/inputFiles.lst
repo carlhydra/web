@@ -1,4 +1,12 @@
-/Users/carlgeorge/git/website/springboot-mvc-data-mongodb-master/src/main/java/com/springmvc/springmongodbweb/models/Product.java
-/Users/carlgeorge/git/website/springboot-mvc-data-mongodb-master/src/main/java/com/springmvc/springmongodbweb/repositories/ProductRepository.java
-/Users/carlgeorge/git/website/springboot-mvc-data-mongodb-master/src/main/java/com/springmvc/springmongodbweb/controllers/ProductController.java
-/Users/carlgeorge/git/website/springboot-mvc-data-mongodb-master/src/main/java/com/springmvc/springmongodbweb/SpringMongodbWebApplication.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\domain\User.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\config\PageConfig.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\repositories\RoleRepository.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\config\CustomizeAuthenticationSuccessHandler.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\domain\Role.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\config\WebSecurityConfig.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\controllers\MyController.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\service\CustomUserDetailsService.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\controllers\ProductController.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\repositories\ProductRepository.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\models\Product.java
+C:\Users\georc\git\website2\springboot-mvc-data-mongodb-master\src\main\java\com\springmvc\springmongodbweb\SpringMongodbWebApplication.java
