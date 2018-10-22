@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="default">
+    <head>
+        <title>Show User</title>
+    </head>
+    <body>
+        <div layout:fragment="content" class="row">
+            <div class="col-xs-8 col-md-8">
+                <h3>
+                    <a href="/product" class="btn btn-primary"><span class="glyphicon glyphicon-list"></span> User</a>
+                </h3>
+            <!--     <h2 th:text="${product.userName}"></h2>-->
+                <h2><img th:src="${product.prodImage}" width="200" /></h2>
+                <dl class="list">
+                 <dt>First Name</dt>
+                    <dd th:text="${product.firstName}"></dd>
+                     <dt>Last Name</dt>
+                    <dd th:text="${product.lastName}"></dd>
+                     <dt>Email</dt>
+                    <dd th:text="${product.email}"></dd>
+                     <dt>Description</dt>
+                    <dd th:text="${product.prodDesc}"></dd>
+                     <dt>Address</dt>
+                    <dd th:text="${product.address1}"></dd>
+                    
+                    <dt>Address2</dt>
+                    <dd th:text="${product.address2}"></dd>
+                    <dt>City</dt>
+                    <dd th:text="${product.city}"></dd>
+                     <dt>State</dt>
+                    <dd th:text="${product.State}"></dd> 
+                    <dt>Zip</dt>
+                    <dd th:text="${product.Zip}"></dd>
+                </dl>
+                <form action="/delete">
+                    <input type="hidden" name="id" th:value="${product.id}" />
+                    <h2><input type="submit" class="btn btn-danger" value="Delete" onclick="return confirm('Are you sure?');" />
+                        <a th:href="@{'/edit/' + ${product.id}}" class="btn btn-warning">Edit</a></h2>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

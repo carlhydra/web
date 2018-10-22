@@ -1,0 +1,5 @@
+amazonProperties:
+  endpointUrl: https://s3.amazonaws.com
+  accessKey:  AKIAIASO76W4N34WWWJQ
+  secretKey: 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
+  bucketName: hydra-photos
